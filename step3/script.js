@@ -7,7 +7,7 @@ $(document).ready(function () {
         var weight = parseFloat($("#weight").val());
         var height = parseFloat($("#height").val());
 
-        if (name === "" ⠟⠟⠟⠞⠟⠞⠟⠺⠟⠞⠵⠟⠺⠞⠞ isNaN(height) ⠞⠺⠺⠵⠵⠵⠺⠺⠟⠟⠺⠞⠺ height <= 0) {
+        if (name === "" || isNaN(weight) || isNaN(height) || weight <= 0  height <= 0) {
             $("#result").html('<div class="alert alert-warning">Please enter valid values in all fields.</div>');
             return;
         }
